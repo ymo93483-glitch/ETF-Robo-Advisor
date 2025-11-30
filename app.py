@@ -146,7 +146,7 @@ with st.sidebar:
     uploaded_file = st.file_uploader("Upload DATA.xlsx", type=['xlsx'])
     
     # Fallback to local file if no upload
-    default_path = r"E:\MFIN\706\term project\DATA.xlsx"
+    default_path = r"DATA.xlsx"
     
     if uploaded_file is not None:
         file_to_load = uploaded_file
