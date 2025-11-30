@@ -245,7 +245,8 @@ with c3:
     risk_val = risk_map[sel_risk_label]
 
 with c4:
-    max_w = st.slider("Max Weight per ETF", 0.1, 1.0, 0.2, 0.05, format="%.0f%%")
+   max_w_pct = st.slider("Max Weight per ETF", 10, 100, 20, 5, format="%d%%")
+   max_w = max_w_pct / 100.0
 
 # Run Button
 if st.button("🚀 Build Optimized Portfolio", type="primary", use_container_width=True):
